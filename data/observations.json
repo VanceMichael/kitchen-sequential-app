@@ -1,0 +1,1414 @@
+{
+  "sites": [
+    {
+      "id": "S1",
+      "crew_id": "G1",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S2",
+      "crew_id": "G1",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S3",
+      "crew_id": "G2",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S4",
+      "crew_id": "G2",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S5",
+      "crew_id": "G3",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S6",
+      "crew_id": "G3",
+      "region": "北",
+      "eligible": true
+    },
+    {
+      "id": "S7",
+      "crew_id": "G4",
+      "region": "南",
+      "eligible": true
+    },
+    {
+      "id": "S8",
+      "crew_id": "G4",
+      "region": "南",
+      "eligible": true
+    },
+    {
+      "id": "S9",
+      "crew_id": "G5",
+      "region": "南",
+      "eligible": true
+    },
+    {
+      "id": "S10",
+      "crew_id": "G5",
+      "region": "南",
+      "eligible": true
+    },
+    {
+      "id": "S11",
+      "crew_id": "G6",
+      "region": "南",
+      "eligible": true
+    },
+    {
+      "id": "S12",
+      "crew_id": "G6",
+      "region": "南",
+      "eligible": true
+    }
+  ],
+  "plans": [
+    {
+      "id": "P1",
+      "versions": [
+        "原训练",
+        "新训练甲",
+        "新训练乙"
+      ],
+      "primary": "每百份餐余重",
+      "guards": [
+        "严重保护事件",
+        "出餐等待p90"
+      ],
+      "look_weeks": [
+        2,
+        4,
+        6
+      ],
+      "family_error": 0.05,
+      "outcome_maturity_days": 7,
+      "min_clusters_per_arm": 2
+    }
+  ],
+  "allocations": [
+    {
+      "id": "A1",
+      "plan_id": "P1",
+      "crew_id": "G1",
+      "assigned": "原训练",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    },
+    {
+      "id": "A2",
+      "plan_id": "P1",
+      "crew_id": "G2",
+      "assigned": "新训练甲",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    },
+    {
+      "id": "A3",
+      "plan_id": "P1",
+      "crew_id": "G3",
+      "assigned": "新训练乙",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    },
+    {
+      "id": "A4",
+      "plan_id": "P1",
+      "crew_id": "G4",
+      "assigned": "原训练",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    },
+    {
+      "id": "A5",
+      "plan_id": "P1",
+      "crew_id": "G5",
+      "assigned": "新训练甲",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    },
+    {
+      "id": "A6",
+      "plan_id": "P1",
+      "crew_id": "G6",
+      "assigned": "新训练乙",
+      "notified_at": "2026-09-01T08:00:00+08:00"
+    }
+  ],
+  "meals": [
+    {
+      "id": "M1-1",
+      "site_id": "S1",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 188,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-2",
+      "site_id": "S2",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 196,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-3",
+      "site_id": "S3",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 204,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-4",
+      "site_id": "S4",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 212,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-5",
+      "site_id": "S5",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 220,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-6",
+      "site_id": "S6",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 228,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-7",
+      "site_id": "S7",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-8",
+      "site_id": "S8",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 244,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-9",
+      "site_id": "S9",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 252,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-10",
+      "site_id": "S10",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 260,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-11",
+      "site_id": "S11",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 268,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M1-12",
+      "site_id": "S12",
+      "week": 1,
+      "date": "2026-09-05",
+      "portions": 276,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-02T08:00:00+08:00"
+    },
+    {
+      "id": "M2-1",
+      "site_id": "S1",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 188,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-2",
+      "site_id": "S2",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 196,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-3",
+      "site_id": "S3",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 204,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-4",
+      "site_id": "S4",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 212,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-5",
+      "site_id": "S5",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 220,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-6",
+      "site_id": "S6",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 228,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-7",
+      "site_id": "S7",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-8",
+      "site_id": "S8",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 244,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-9",
+      "site_id": "S9",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 252,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-10",
+      "site_id": "S10",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 260,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-11",
+      "site_id": "S11",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 268,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M2-12",
+      "site_id": "S12",
+      "week": 2,
+      "date": "2026-09-09",
+      "portions": 276,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-03T08:00:00+08:00"
+    },
+    {
+      "id": "M3-1",
+      "site_id": "S1",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 188,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-2",
+      "site_id": "S2",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 196,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-3",
+      "site_id": "S3",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 204,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-4",
+      "site_id": "S4",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 212,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": true,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-5",
+      "site_id": "S5",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 220,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-6",
+      "site_id": "S6",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 228,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-7",
+      "site_id": "S7",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-8",
+      "site_id": "S8",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 244,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-9",
+      "site_id": "S9",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 252,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-10",
+      "site_id": "S10",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 260,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-11",
+      "site_id": "S11",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 268,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M3-12",
+      "site_id": "S12",
+      "week": 3,
+      "date": "2026-09-13",
+      "portions": 276,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-04T08:00:00+08:00"
+    },
+    {
+      "id": "M4-1",
+      "site_id": "S1",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 188,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-2",
+      "site_id": "S2",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 196,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-3",
+      "site_id": "S3",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 204,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-4",
+      "site_id": "S4",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 212,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-5",
+      "site_id": "S5",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 220,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-6",
+      "site_id": "S6",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 228,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-7",
+      "site_id": "S7",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-8",
+      "site_id": "S8",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 244,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-9",
+      "site_id": "S9",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 252,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-10",
+      "site_id": "S10",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 260,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-11",
+      "site_id": "S11",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 268,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M4-12",
+      "site_id": "S12",
+      "week": 4,
+      "date": "2026-09-17",
+      "portions": 276,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-05T08:00:00+08:00"
+    },
+    {
+      "id": "M5-1",
+      "site_id": "S1",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 188,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-2",
+      "site_id": "S2",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 196,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-3",
+      "site_id": "S3",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 204,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-4",
+      "site_id": "S4",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 212,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-5",
+      "site_id": "S5",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 220,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-6",
+      "site_id": "S6",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 228,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-7",
+      "site_id": "S7",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-8",
+      "site_id": "S8",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 244,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-9",
+      "site_id": "S9",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 252,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-10",
+      "site_id": "S10",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 260,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-11",
+      "site_id": "S11",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 268,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M5-12",
+      "site_id": "S12",
+      "week": 5,
+      "date": "2026-09-21",
+      "portions": 276,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-06T08:00:00+08:00"
+    },
+    {
+      "id": "M6-1",
+      "site_id": "S1",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 188,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-2",
+      "site_id": "S2",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 196,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-3",
+      "site_id": "S3",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 204,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-4",
+      "site_id": "S4",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 212,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-5",
+      "site_id": "S5",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 220,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-6",
+      "site_id": "S6",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 228,
+      "waste_kg": 6,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-7",
+      "site_id": "S7",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 236,
+      "waste_kg": 5,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-8",
+      "site_id": "S8",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 244,
+      "waste_kg": 11,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "原训练",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-9",
+      "site_id": "S9",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 252,
+      "waste_kg": 10,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-10",
+      "site_id": "S10",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 260,
+      "waste_kg": 9,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        9
+      ],
+      "actual": "新训练甲",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-11",
+      "site_id": "S11",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 268,
+      "waste_kg": 8,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        10
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    },
+    {
+      "id": "M6-12",
+      "site_id": "S12",
+      "week": 6,
+      "date": "2026-09-25",
+      "portions": 276,
+      "waste_kg": 7,
+      "wait_minutes": [
+        3,
+        4,
+        6,
+        8
+      ],
+      "actual": "新训练乙",
+      "closed": false,
+      "known_at": "2026-10-07T08:00:00+08:00"
+    }
+  ],
+  "events": [
+    {
+      "id": "E1",
+      "site_id": "S3",
+      "date": "2026-09-17",
+      "kind": "保护事件",
+      "finding": "待核实",
+      "known_at": "2026-09-18T09:00:00+08:00"
+    },
+    {
+      "id": "E2",
+      "site_id": "S3",
+      "date": "2026-09-17",
+      "kind": "保护事件",
+      "finding": "已核实",
+      "supersedes": "E1",
+      "known_at": "2026-09-22T09:00:00+08:00"
+    }
+  ],
+  "courses": [
+    {
+      "id": "C1",
+      "trainer_id": "T1",
+      "crew_id": "G2",
+      "slot": "2026-10-04-AM",
+      "status": "已通知"
+    },
+    {
+      "id": "C2",
+      "trainer_id": "T1",
+      "crew_id": "G4",
+      "slot": "2026-10-04-AM",
+      "status": "备选"
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "T1",
+      "versions": [
+        "新训练甲",
+        "新训练乙"
+      ],
+      "valid_until": "2026-10-31"
+    }
+  ]
+}

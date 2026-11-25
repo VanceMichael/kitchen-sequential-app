@@ -1,0 +1,400 @@
+{
+  "type": [
+    "object"
+  ],
+  "properties": {
+    "allocations": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "assigned": {
+            "type": [
+              "string"
+            ]
+          },
+          "crew_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "notified_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "plan_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "assigned",
+          "crew_id",
+          "id",
+          "notified_at",
+          "plan_id"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "courses": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "crew_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "slot": {
+            "type": [
+              "string"
+            ]
+          },
+          "status": {
+            "type": [
+              "string"
+            ]
+          },
+          "trainer_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "crew_id",
+          "id",
+          "slot",
+          "status",
+          "trainer_id"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "events": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "date": {
+            "type": [
+              "string"
+            ]
+          },
+          "finding": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "known_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "site_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "supersedes": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "date",
+          "finding",
+          "id",
+          "kind",
+          "known_at",
+          "site_id"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "meals": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "actual": {
+            "type": [
+              "string"
+            ]
+          },
+          "closed": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "date": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "known_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "portions": {
+            "type": [
+              "number"
+            ]
+          },
+          "site_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "wait_minutes": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "number"
+              ]
+            }
+          },
+          "waste_kg": {
+            "type": [
+              "number"
+            ]
+          },
+          "week": {
+            "type": [
+              "number"
+            ]
+          }
+        },
+        "required": [
+          "actual",
+          "closed",
+          "date",
+          "id",
+          "known_at",
+          "portions",
+          "site_id",
+          "wait_minutes",
+          "waste_kg",
+          "week"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "plans": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "family_error": {
+            "type": [
+              "number"
+            ]
+          },
+          "guards": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "look_weeks": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "number"
+              ]
+            }
+          },
+          "min_clusters_per_arm": {
+            "type": [
+              "number"
+            ]
+          },
+          "outcome_maturity_days": {
+            "type": [
+              "number"
+            ]
+          },
+          "primary": {
+            "type": [
+              "string"
+            ]
+          },
+          "versions": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          }
+        },
+        "required": [
+          "family_error",
+          "guards",
+          "id",
+          "look_weeks",
+          "min_clusters_per_arm",
+          "outcome_maturity_days",
+          "primary",
+          "versions"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "qualifications": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "valid_until": {
+            "type": [
+              "string"
+            ]
+          },
+          "versions": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "valid_until",
+          "versions"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "sites": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "crew_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "eligible": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "region": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "crew_id",
+          "eligible",
+          "id",
+          "region"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "allocations",
+    "courses",
+    "events",
+    "meals",
+    "plans",
+    "qualifications",
+    "sites"
+  ],
+  "additionalProperties": true,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "备餐培训的连续检验与试点收口合成资料格式"
+}
